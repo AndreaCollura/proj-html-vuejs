@@ -18,13 +18,13 @@
         <!--/ HERO -->
 
         <!-- FEATURES A BEST HITS  -->
-        <section class="container mt-5">
+        <section class="container mt-5 mb-5">
             <div class="text-center text-uppercase">
                 <p>pelicula studio</p>
                 <h4 class="fs-1">this is what we do</h4>
             </div>
             <div class="d-flex flex-wrap ms-4">
-                <div v-for="(card,index) in store.featureList" :key="index" class="card-box d-flex flex-column ms-2 mt-2">
+                <div v-for="(card, index) in store.featureList" :key="index" class="card-box d-flex flex-column ms-2 mt-2">
                     <div class="my-card">
                         <img :src="card.image" alt="">
                     </div>
@@ -38,9 +38,9 @@
         <!-- / FEATURES UGUALE A BEST HITS  -->
 
         <!-- ABOUT US -->
-        <section>
-            <div class="container-fluid d-flex justify-content-end debug">
-                <div class="aboust-us w-50">
+        <section class="pt-5">
+            <div class="container-fluid about-us d-flex justify-content-end">
+                <div class="content-box w-50">
                     <p>ABOUT US</p>
                     <h2>HIGH QUALITY CINEMATICS</h2>
                     <span class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci cumque, beatae
@@ -51,7 +51,9 @@
                         nemo eveniet excepturi repellendus, laborum quo quia, saepe itaque. Culpa placeat est, repudiandae
                         eos
                         veritatis ipsum nihil quos dignissimos?</span>
-                    <button class="button">read more</button>
+                    <div>
+                        <button class="button">read more</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -222,14 +224,14 @@ export default {
             }
 
             button {
-                width: 100px;
-                height: 35px;
-                font-size: .6rem;
+                width: 150px;
+                height: 40px;
+                font-size: .8rem;
                 background-color: $white-bg;
                 border: none;
                 font-weight: bold;
                 text-transform: uppercase;
-                margin-top: 10px;
+                margin-top: 20px;
 
             }
         }
@@ -240,7 +242,7 @@ export default {
 
 /* HERO */
 
-/* FEATURE */
+/* FEATURES */
 
 .card-box {
     width: 400px;
@@ -254,12 +256,49 @@ export default {
             width: 100%;
             height: 100%;
             scale: .4;
-            
-            
+
+
 
         }
     }
 }
 
-/* FEATURE */
+/* FEATURES */
+
+/* ABOUT US */
+
+.about-us{
+    background-image: url(../assets/styles/img/About-Us.jpg);
+    height: 570px;
+    .content-box{
+        font-weight: bold;
+        padding: 100px 60px 0 40px;
+        color: $white-bg;
+        p{
+            font-size: .9rem
+        }
+        h2{
+            font-size: 2.5rem;
+            padding-bottom: 20px;
+        }
+        span{
+            font-size: .9rem;
+            font-weight:400;
+        }
+        button {
+                width: 150px;
+                height: 40px;
+                font-size: .8rem;
+                background-color: $white-bg;
+                border: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-top: 20px;
+
+            }
+    }
+    
+}
+
+/* ABOUT US */
 </style>
