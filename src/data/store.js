@@ -98,7 +98,43 @@ export const store = reactive({
             bigtxt: "versitile actors",
             smalltxt: ""
         },
-    ]
+    ],
+
+    hitsList: [
+        {
+            image: "/images/Gallery-01.jpg",
+            bigtxt: "seventeenth summer",
+            smalltxt: "Commercial, Music Video"
+
+        },
+        {
+            image: "/images/Gallery-02.jpg",
+            bigtxt: "a message to space",
+            smalltxt: "Short Film"
+        },
+        {
+            image: "/images/Gallery-03.jpg",
+            bigtxt: "the most beautiful thing",
+            smalltxt: "Music Video"
+        },
+        {
+            image: "/images/Gallery-04.jpg",
+            bigtxt: "permission to speak",
+            smalltxt: "Documentary"
+        },
+        {
+            image: "/images/Gallery-05.jpg",
+            bigtxt: "explore our space",
+            smalltxt: "Film noir"
+        },
+        {
+            image: "/images/Gallery-06.jpg",
+            bigtxt: "film production",
+            smalltxt: "blaxploitation"
+        },
+    ],
+
+
 
     
 

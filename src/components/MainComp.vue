@@ -18,7 +18,7 @@
         <!--/ HERO -->
 
         <!-- FEATURES A BEST HITS  -->
-        <section class="container mt-5 mb-5">
+        <section id="features" class="container mt-5 mb-5">
             <div class="text-center text-uppercase">
                 <p>pelicula studio</p>
                 <h4 class="fs-1">this is what we do</h4>
@@ -60,16 +60,20 @@
         <!--/ ABOUT US -->
 
         <!-- BEST HITS UGUALE A FEATURES -->
-        <section class="container debug">
-            <div class="text-center">
-                <p>YOUR WATCHLIST</p>
-                <h4>BEST HITS MOVIES</h4>
+        <section id="hits" class="container mt-5 mb-5">
+            <div class="text-center text-uppercase mb-4">
+                <p>your watchlist</p>
+                <h4 class="fs-1">best hits movies</h4>
             </div>
-            <div class="container">
-                <div class="card">
-                    <img src="" alt="">
-                    <h5>array of equipment</h5>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sit.</span>
+            <div class="d-flex flex-wrap gap-3 ms-4">
+                <div v-for="(card, index) in store.hitsList" :key="index" class="card-box d-flex flex-column ms-2 mt-2">
+                    <div class="my-card">
+                        <img :src="card.image" alt="">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h5 class="text-uppercase">{{ card.bigtxt }}</h5>
+                        <span>{{ card.smalltxt }}</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -244,13 +248,14 @@ export default {
 
 /* FEATURES */
 
-.card-box {
+#features{
+    .card-box {
     width: 400px;
 
     .my-card {
         width: 100%;
         height: 180px;
-        overflow-y: hidden;
+        
 
         img {
             width: 100%;
@@ -262,43 +267,80 @@ export default {
         }
     }
 }
+}
+
+
 
 /* FEATURES */
 
 /* ABOUT US */
 
-.about-us{
+.about-us {
     background-image: url(../assets/styles/img/About-Us.jpg);
     height: 570px;
-    .content-box{
+
+    .content-box {
         font-weight: bold;
         padding: 100px 60px 0 40px;
         color: $white-bg;
-        p{
+
+        p {
             font-size: .9rem
         }
-        h2{
+
+        h2 {
             font-size: 2.5rem;
             padding-bottom: 20px;
         }
-        span{
-            font-size: .9rem;
-            font-weight:400;
-        }
-        button {
-                width: 150px;
-                height: 40px;
-                font-size: .8rem;
-                background-color: $white-bg;
-                border: none;
-                font-weight: bold;
-                text-transform: uppercase;
-                margin-top: 20px;
 
-            }
+        span {
+            font-size: .9rem;
+            font-weight: 400;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            font-size: .8rem;
+            background-color: $white-bg;
+            border: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 20px;
+
+        }
     }
-    
+
 }
 
 /* ABOUT US */
+
+/* HITS */
+
+#hits {
+    .card-box {
+        width: 400px;
+
+        h5{
+            font-size: 1rem;
+        }
+
+        .my-card {
+            width: 100%;
+            height: 300px;
+            
+
+            img {
+                width: 100%;
+                height: 100%;
+
+
+            }
+        }
+    }
+}
+
+
+
+/* HITS */
 </style>
