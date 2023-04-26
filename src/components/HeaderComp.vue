@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="container-fluid debug d-flex justify-content-between align-items-center">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="../assets/styles/img/logo.svg" alt="">
             </div>
