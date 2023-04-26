@@ -80,12 +80,12 @@
         <!-- / BEST HITS UGUALE A FEATURES  -->
 
         <!-- STATISTICS -->
-        <section>
-            <div class="container-fluid">
-                <div class="container">
+        <section id="statistics" class="debug">
+            <div class="container-fluid ">
+                <div class="container my-auto debug">
                     <div>
                         <h2>158</h2>
-                        <p>SATISFIED CLIENTS</p>
+                        <p>SATISFIED CLIENTS</p> <!-- ciclo v-for + creare piccoli box x txt..SEI ARRIVATO QUI -->
                     </div>
                 </div>
             </div>
@@ -343,4 +343,15 @@ export default {
 
 
 /* HITS */
+
+
+/*  STATISTICS */
+
+    #statistics{
+        height: 250px;
+        background-image: url(../assets/styles/img/Parallax-01.jpg) ;
+        background-position: center;
+    }
+
+/* / STATISTICS */
 </style>

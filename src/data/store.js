@@ -134,6 +134,25 @@ export const store = reactive({
         },
     ],
 
+    statisticList: [
+        {
+            number: "158",
+            txt: "statisfied clients"
+        },
+        {
+            number: "3+",
+            txt: "our projects"
+        },
+        {
+            number: "1,906",
+            txt: "cup of coffee"
+        },
+        {
+            number: "2",
+            txt: "our awards"
+        },
+    ]
+
 
 
     
