@@ -1,22 +1,25 @@
 <template>
   <!-- HEADER -->
 
-  <header>
-    <div class="container-fluid debug d-flex justify-content-between align-items-center">
-      <div class="logo">logo</div>
-      <div class="navbar">navbar</div>
-      <div class="social-icons">icons</div>
-    </div>
-    <div class="container-fluid hero debug ">
-      <div class="container">JUMBO</div>
-    </div>
-  </header>
+  <HeaderComp/>
 
   <!--FINE HEADER -->
 
+
+  
   <!-- MAIN -->
 
   <main>
+
+    <!-- HERO -->
+    <section>
+      <div class="container-fluid hero debug ">
+            <div class="container">JUMBO</div>
+        </div>
+    </section>
+
+    <!--/ HERO -->
+
     <!-- FEATURES A BEST HITS  -->
     <section class="container debug">
       <div class="text-center">
@@ -35,11 +38,12 @@
 
     <!-- ABOUT US -->
     <section>
-      <div class="container-fluid debug">
-        <div class="aboust-us">
+      <div class="container-fluid d-flex justify-content-end debug">
+        <div class="aboust-us w-50">
           <p>ABOUT US</p>
           <h2>HIGH QUALITY CINEMATICS</h2>
-          <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci cumque, beatae voluptates vero esse in
+          <span class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci cumque, beatae voluptates vero
+            esse in
             aliquam sed culpa assumenda temporibus quasi inventore nulla labore natus! Similique, quos cum sed ipsa esse
             nemo eveniet excepturi repellendus, laborum quo quia, saepe itaque. Culpa placeat est, repudiandae eos
             veritatis ipsum nihil quos dignissimos?</span>
@@ -188,13 +192,17 @@
 </template>
 
 <script>
+import { store } from './data/store'
+import HeaderComp from './components/HeaderComp.vue';
 export default {
   name: 'App',
   components: {
+    HeaderComp
 
   },
   data() {
     return {
+      store
 
 
     }
@@ -214,4 +222,5 @@ export default {
 //   margin: 0 5px;
 //   background-position: center;
 
-// }</style>
+// }
+</style>
