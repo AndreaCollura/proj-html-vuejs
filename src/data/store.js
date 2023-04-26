@@ -66,6 +66,40 @@ export const store = reactive({
         }
     ],
 
+    featureList: [
+        {
+            image: "/images/image (14).svg",
+            bigtxt: "array of equipment",
+            smalltxt: ""
+
+        },
+        {
+            image: "/images/image (16).svg",
+            bigtxt: "new technologies",
+            smalltxt: ""
+        },
+        {
+            image: "/images/image (18).svg",
+            bigtxt: "versitile actors",
+            smalltxt: ""
+        },
+        {
+            image: "/images/image (15).svg",
+            bigtxt: "top directors",
+            smalltxt: ""
+        },
+        {
+            image: "/images/image (17).svg",
+            bigtxt: "minute editing",
+            smalltxt: ""
+        },
+        {
+            image: "/images/image (19).svg",
+            bigtxt: "versitile actors",
+            smalltxt: ""
+        },
+    ]
+
     
 
 

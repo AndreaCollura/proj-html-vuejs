@@ -2,15 +2,15 @@
     <main>
 
         <!-- HERO -->
-        <section>
+        <section class="pb-5">
             <div class="container-fluid hero d-flex justify-content-start ">
                 <div class="container content  text-uppercase">
                     <div class="txt-box">
                         <p class="m-0">cinemato studio</p>
                         <h1>action and inspire people</h1>
-                        <button >read more</button>
+                        <button>read more</button>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -18,16 +18,20 @@
         <!--/ HERO -->
 
         <!-- FEATURES A BEST HITS  -->
-        <section class="container debug">
-            <div class="text-center">
+        <section class="container mt-5">
+            <div class="text-center text-uppercase">
                 <p>pelicula studio</p>
-                <h4>this is what we do</h4>
+                <h4 class="fs-1">this is what we do</h4>
             </div>
-            <div class="container">
-                <div class="card">
-                    <img src="" alt="">
-                    <h5>array of equipment</h5>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sit.</span>
+            <div class="d-flex flex-wrap ms-4">
+                <div v-for="(card,index) in store.featureList" :key="index" class="card-box d-flex flex-column ms-2 mt-2">
+                    <div class="my-card">
+                        <img :src="card.image" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h5 class="text-uppercase">{{ card.bigtxt }}</h5>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sit.</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -197,36 +201,65 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-    .hero{
-        height: 500px;
-        background-image: url(../assets/styles/img/Parallax-02.jpg);
-        background-position: center;
-        .content{
-            padding-top: 150px;
-            color: $white-bg;
-            .txt-box{
-                width: 300px;
-                p{
-                    font-size: .8rem;
-                }
-                button{
-                    width: 100px;
-                    height: 35px;
-                    font-size: .6rem;
-                    background-color: $white-bg;
-                    border: none;
-                    font-weight: bold;
-                    text-transform: uppercase ;
-                    margin-top: 10px;
-                    
-                }
+
+
+
+/* HERO */
+.hero {
+    height: 500px;
+    background-image: url(../assets/styles/img/Parallax-02.jpg);
+    background-position: center;
+
+    .content {
+        padding-top: 150px;
+        color: $white-bg;
+
+        .txt-box {
+            width: 300px;
+
+            p {
+                font-size: .8rem;
             }
 
+            button {
+                width: 100px;
+                height: 35px;
+                font-size: .6rem;
+                background-color: $white-bg;
+                border: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-top: 10px;
+
+            }
         }
-        
+
     }
 
+}
 
+/* HERO */
 
+/* FEATURE */
 
+.card-box {
+    width: 400px;
+
+    .my-card {
+        width: 100%;
+        height: 180px;
+        overflow-y: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            scale: .4;
+            
+            
+
+        }
+    }
+}
+
+/* FEATURE */
 </style>
