@@ -58,6 +58,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+
 // .icons-bg{
 //   background-image: url(./assets/styles/img/Parallax-03.jpg);
 //   height: 200px;

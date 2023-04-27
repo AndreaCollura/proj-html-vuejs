@@ -138,28 +138,32 @@
         <!--/ QUOTE -->
 
         <!-- LATEST NEWS -->
-        <section class="container debug">
-            <div class="text-center">
-                <p>LATEST NEWS</p>
-                <h4>ARTICLES UPDATED DAILY</h4>
+        <section id="news" class="container mt-5 mb-5">
+            <div class="text-center text-uppercase mb-4">
+                <p>latest news</p>
+                <h4 class="fs-1">articles updated daily</h4>
             </div>
-            <div class="container debug">
-                <div class="card">
-                    <img src="" alt="">
-                    <span>november</span>
-                    <h5>RECAP YOUR LATEST COMPANY...</h5>
-                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, quibusdam.</span>
+            <div class="d-flex flex-wrap gap-3 ms-4">
+                <div v-for="(card, index) in store.newsList" :key="index" class="card-box d-flex flex-column ms-2 mt-2">
+                    <div class="my-card">
+                        <img :src="card.image" alt="">
+                    </div>
+                    <div class="mt-3">
+                        <span >{{ card.date }}</span>
+                        <h5 class="text-uppercase mt-2">{{ card.bigtxt }}</h5>
+                        <p>{{ card.smalltxt }}</p>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- / LATEST NEWS -->
 
         <!-- ICONS -->
-        <section>
-            <div class="container-fluid icons-bg">
-                <div class="container">
-                    <div>
-                        <img src="" alt="">
+        <section id="icons">
+            <div class="container-fluid">
+                <div class="container d-flex justify-content-between my-auto">
+                    <div v-for="(box, index) in store.iconList" :key="index" class="icon-box text-center ">
+                        <img :src="box.image" alt=""> 
                     </div>
                 </div>
             </div>
@@ -196,6 +200,7 @@
 </template>
 
 <script>
+
 import { store } from '../data/store'
 export default {
     name: 'MainComp',
@@ -217,6 +222,7 @@ export default {
 
 
 <style lang="scss" scoped>
+
 @use '../assets/styles/partials/variables' as *;
 
 
@@ -225,14 +231,14 @@ export default {
 .hero {
     height: 700px;
     background-image: url(../assets/styles/img/Main-Banner-1.jpg);
-    /* background-position: center; */
+    
 
     .content {
         padding-top: 220px;
         color: $white-bg;
 
         .txt-box {
-            width: 550px;
+            width: 600px;
 
             p {
                 font-size: 1.2rem;
@@ -466,6 +472,72 @@ export default {
     }
     
 }
+
+/*  / QUOTE */
+
+/* NEWS */
+
+#news {
+    .card-box {
+        width: 400px;
+        span{
+            color: $gray-bg;
+        }
+
+        h5{
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .my-card {
+            width: 100%;
+            height: 300px;
+            
+
+            img {
+                width: 100%;
+                height: 100%;
+
+
+            }
+        }
+    }
+}
+
+/* / NEWS */
+
+/* ICONS */
+
+#icons{
+        height: 250px;
+        background-image: url(../assets/styles/img/Parallax-03.jpg) ;
+        background-position: center;
+        .container{
+
+            padding-top: 30px;
+            .icon-box{
+            width: 200px;
+            height: 200px;
+            color: $white-bg;
+            padding-top: 50px;
+            img{
+                width: 150px;
+            }
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: .8rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            
+
+        }
+        }
+        
+    }
+
 
 
 </style>

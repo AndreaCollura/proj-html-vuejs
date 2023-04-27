@@ -176,4 +176,43 @@ export const store = reactive({
             smalltxt: "Cameraman"
         }
     ],
+
+    newsList: [
+        {
+            date: "November 06 , 2021 By Admin",
+            image: "/images/blog07.jpg",
+            bigtxt: "recap your latest company event",
+            smalltxt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, quibusdam."
+
+        },
+        {
+            date: "May 27 , 2022 By Admin",
+            image: "/images/blog01.jpg",
+            bigtxt: "how to edit a film score to serve",
+            smalltxt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, quibusdam."
+        },
+        {
+            date: "May 07 , 2022 By Admin",
+            image: "/images/blog02.jpg",
+            bigtxt: "the most beautiful thing",
+            smalltxt: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, quibusdam."
+        }
+    ],
+    iconList: [
+        {
+            image: "/images/03.png",
+        },
+        {
+            image: "/images/04.png",
+        },
+        {
+            image: "/images/05.png",
+        },
+        {
+            image: "/images/01.png",
+        },
+        {
+            image: "/images/02.png",
+        },
+    ],
 })
