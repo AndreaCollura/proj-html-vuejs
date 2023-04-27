@@ -27,7 +27,7 @@
                     <div class="my-card">
                         <img :src="card.image" alt="">
                     </div>
-                    <div class="text-center">
+                    <div class="txt-box  text-center">
                         <h5 class="text-uppercase">{{ card.bigtxt }}</h5>
                         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sit.</span>
                     </div>
@@ -69,7 +69,7 @@
                     <div class="my-card">
                         <img :src="card.image" alt="">
                     </div>
-                    <div class="text-center mt-3">
+                    <div class="txt-box text-center mt-3">
                         <h5 class="text-uppercase">{{ card.bigtxt }}</h5>
                         <span>{{ card.smalltxt }}</span>
                     </div>
@@ -102,7 +102,7 @@
                     <div class="my-card">
                         <img :src="person.image" alt="">
                     </div>
-                    <div class="text-center mt-3">
+                    <div class="txt-box text-center mt-3">
                         <h5 class="text-uppercase">{{ person.bigtxt }}</h5>
                         <span>{{ person.smalltxt }}</span>
                     </div>
@@ -254,12 +254,15 @@ export default {
         .txt-box {
             width: 600px;
 
+
             p {
                 font-size: 1.2rem;
+                font-weight: 700;
             }
 
             h1 {
                 font-size: 4.3rem;
+                font-weight: 700;
             }
 
             button {
@@ -285,22 +288,36 @@ export default {
 /* FEATURES */
 
 #features {
+
+    h4{
+        font-weight: 700;
+    }
+    p{
+        font-size: .8rem;
+        font-weight: 700;
+        color: $gray-bg;
+    }
     .card-box {
         width: 400px;
-
         .my-card {
             width: 100%;
             height: 180px;
-
-
             img {
                 width: 100%;
                 height: 100%;
                 scale: .4;
-
-
-
             }
+        }
+    }
+    .txt-box {
+        margin: 0 auto;
+        width: 300px;
+        h5 {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        span {
+            color: $gray-bg;
         }
     }
 }
@@ -321,12 +338,15 @@ export default {
         color: $white-bg;
 
         p {
-            font-size: .9rem
+            font-weight: 700;
+            font-size: .8rem;
+            
         }
 
         h2 {
             font-size: 2.5rem;
             padding-bottom: 20px;
+            font-weight: 700;
         }
 
         span {
@@ -354,6 +374,15 @@ export default {
 /* HITS */
 
 #hits {
+
+    h4{
+        font-weight: 700;
+    }
+    p{
+        font-size: .8rem;
+        font-weight: 700;
+        color: $gray-bg;
+    }
     .card-box {
         width: 400px;
 
@@ -374,9 +403,20 @@ export default {
             }
         }
     }
+
+    .txt-box {
+        margin: 0 auto;
+        width: 300px;
+        h5 {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        span {
+            color: $gray-bg;
+        }
+    }
+    
 }
-
-
 
 /* HITS */
 
@@ -419,6 +459,15 @@ export default {
 /* TEAMS */
 
 #teams {
+
+    h4{
+        font-weight: 700;
+    }
+    p{
+        font-size: .8rem;
+        font-weight: 700;
+        color: $gray-bg;
+    }
     .card-box {
         width: 280px;
 
@@ -437,6 +486,18 @@ export default {
 
 
             }
+        }
+    }
+
+    .txt-box {
+        margin: 0 auto;
+        width: 300px;
+        h5 {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+        span {
+            color: $gray-bg;
         }
     }
 }
@@ -499,6 +560,15 @@ export default {
 /* NEWS */
 
 #news {
+    
+    h4{
+        font-weight: 700;
+    }
+    p{
+        font-size: .8rem;
+        font-weight: 700;
+        color: $gray-bg;
+    }
     .card-box {
         width: 400px;
 
@@ -622,4 +692,5 @@ export default {
 
 }
 
-/*/ CTA */</style>
+/*/ CTA */
+</style>

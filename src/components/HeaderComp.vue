@@ -104,8 +104,8 @@ ul {
 
     li {
         a {
-            font-size: .9rem;
-            color: $gray-bg;
+            font-size: .8rem;
+            color: $dark-gray;
             text-decoration: none;
             font-weight: bold;
             img{
