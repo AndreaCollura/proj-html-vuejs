@@ -16,7 +16,7 @@
 
         <!--/ HERO -->
 
-        <!-- FEATURES A BEST HITS  -->
+        <!-- FEATURES -->
         <section id="features" class="container mt-5 mb-5">
             <div class="text-center text-uppercase">
                 <p>pelicula studio</p>
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </section>
-        <!-- / FEATURES UGUALE A BEST HITS  -->
+        <!-- / FEATURES   -->
 
         <!-- ABOUT US -->
         <section class="pt-5">
@@ -58,7 +58,7 @@
         </section>
         <!--/ ABOUT US -->
 
-        <!-- BEST HITS UGUALE A FEATURES -->
+        <!-- BEST HITS  -->
         <section id="hits" class="container mt-5 mb-5">
             <div class="text-center text-uppercase mb-4">
                 <p>your watchlist</p>
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </section>
-        <!-- / BEST HITS UGUALE A FEATURES  -->
+        <!-- / BEST HITS   -->
 
         <!-- STATISTICS -->
         <section id="statistics">
@@ -112,17 +112,25 @@
         <!-- /TEAM -->
 
         <!-- QUOTE -->
-        <section>
-            <div class="container-fluid debug">
-                <div class="container debug">
-                    <h2><i>quote icon</i></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, aspernatur, ex officia
+        <section id="quote">
+            <div class="container-fluid d-flex align-items-center ">
+                <div class="container d-flex flex-column align-items-center w-50 ">
+                    <div >
+                        <img class="quote-icon" src="../assets/styles/img/image (20).svg" alt="">
+                    </div>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, aspernatur, ex officia
                         praesentium
-                        est illo consequuntur quis optio placeat aliquid veniam! Dolorem, velit recusandae?</p>
-                    <div>
-                        <img src="" alt="">
-                        <h4></h4>
-                        <span></span>
+                        est illo consequuntur quis optio placeat aliquid veniam! Dolorem, velit recusandae,
+                        ex officia
+                        praesentium
+                        est illo consequuntur quis optio placeat aliquid veniam! Dolorem, velit recusandae</p>
+                    <div class="staff-box d-flex align-items-center">
+                        <img src="../assets/styles/img/01.jpg" alt="">
+                        <div>
+                            <h4>john doe</h4>
+                            <span>Designer</span>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -408,5 +416,56 @@ export default {
         }
     }
 }
+
+/* TEAMS */
+
+/* QUOTE */
+
+#quote{
+    .container-fluid{
+        background-image: url(../assets/styles/img/Parallax-02.jpg);
+        color: $white-bg;
+        height: 500px;
+        p{
+            font-weight: bold;
+            font-size: .9rem;
+        }
+        
+        .quote-icon{
+            margin-bottom: 30px;
+            width: 50px;
+            filter: invert(1)
+        
+        
+        }
+        .staff-box{
+            
+            width: 200px;
+            height: 70px;
+            img{
+                width: 55px;
+                height: 55px;
+                object-fit: contain;
+                overflow: hidden;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+            h4{
+                text-transform: uppercase;
+                font-size: 1rem;
+                margin: 0;
+                padding: 0;
+                
+            }
+            span{
+                font-size: .8rem;
+                line-height: .1rem;
+                
+            }
+        }
+    }
+    
+}
+
 
 </style>
