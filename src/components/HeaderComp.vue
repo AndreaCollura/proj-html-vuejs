@@ -1,6 +1,6 @@
 <template>
     <header >
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="container-fluid header-size d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="../assets/styles/img/logo.svg" alt="">
             </div>
@@ -46,23 +46,24 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 
+
 i {
     border-right: 1px solid $gray-bg ;
-    padding-right: 10px;
+    padding-right: 20px;
     color: $gray-bg;
     margin-right: 10px;
-    font-size: .8rem;
+    font-size: 1.2rem;
 
 
 }
 
 .container-fluid {
-    height: 50px;
+    height: 90px;
 }
 
 .logo {
-    width: 100px;
-    height: 50px;
+    width: 160px;
+    height: 60px;
 
     img {
         width: 100%;
@@ -75,11 +76,13 @@ i {
 
 .social-icons {
 
-    width: 90px;
+    width: 250px;
     margin-right: 10px;
+    margin-left: 10px;
     img {
-        width: 10px;
-        height: 10px;
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
         object-fit: contain;
     }
 }
@@ -95,7 +98,7 @@ ul {
 
     li {
         a {
-            font-size: .6rem;
+            font-size: .9rem;
             color: $gray-bg;
             text-decoration: none;
             font-weight: bold;

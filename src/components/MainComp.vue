@@ -10,7 +10,6 @@
                         <h1>action and inspire people</h1>
                         <button>read more</button>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -80,7 +79,7 @@
         <!-- / BEST HITS UGUALE A FEATURES  -->
 
         <!-- STATISTICS -->
-        <section id="statistics" class="mb-5">
+        <section id="statistics">
             <div class="container-fluid">
                 <div class="container d-flex justify-content-between my-auto">
                     <div v-for="(box, index) in store.statisticList" :key="index" class="stati-box text-center ">
@@ -216,24 +215,28 @@ export default {
 
 /* HERO */
 .hero {
-    height: 500px;
-    background-image: url(../assets/styles/img/Parallax-02.jpg);
-    background-position: center;
+    height: 700px;
+    background-image: url(../assets/styles/img/Main-Banner-1.jpg);
+    /* background-position: center; */
 
     .content {
-        padding-top: 150px;
+        padding-top: 220px;
         color: $white-bg;
 
         .txt-box {
-            width: 300px;
+            width: 550px;
 
             p {
-                font-size: .8rem;
+                font-size: 1.2rem;
+            }
+
+            h1{
+                font-size: 4.3rem;
             }
 
             button {
-                width: 150px;
-                height: 40px;
+                width: 170px;
+                height: 50px;
                 font-size: .8rem;
                 background-color: $white-bg;
                 border: none;
@@ -248,7 +251,8 @@ export default {
 
 }
 
-/* HERO */
+/* / HERO */
+
 
 /* FEATURES */
 
