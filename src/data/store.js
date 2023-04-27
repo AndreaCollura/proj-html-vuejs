@@ -151,11 +151,29 @@ export const store = reactive({
             number: "2",
             txt: "our awards"
         },
-    ]
+    ],
 
+    teamList: [
+        {
+            image: "/images/Team-01.jpg",
+            bigtxt: "fabricio guerra",
+            smalltxt: "Main Director"
 
-
-    
-
-
+        },
+        {
+            image: "/images/Team-02.jpg",
+            bigtxt: "umberto pagoda",
+            smalltxt: "Main Writer"
+        },
+        {
+            image: "/images/Team-03.jpg",
+            bigtxt: "gloria riccasso",
+            smalltxt: "Main Producer"
+        },
+        {
+            image: "/images/Team-04.jpg",
+            bigtxt: "lio napoin",
+            smalltxt: "Cameraman"
+        }
+    ],
 })

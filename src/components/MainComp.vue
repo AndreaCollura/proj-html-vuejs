@@ -80,12 +80,12 @@
         <!-- / BEST HITS UGUALE A FEATURES  -->
 
         <!-- STATISTICS -->
-        <section id="statistics" class="debug">
-            <div class="container-fluid ">
-                <div class="container my-auto debug">
-                    <div>
-                        <h2>158</h2>
-                        <p>SATISFIED CLIENTS</p> <!-- ciclo v-for + creare piccoli box x txt..SEI ARRIVATO QUI -->
+        <section id="statistics" class="mb-5">
+            <div class="container-fluid">
+                <div class="container d-flex justify-content-between my-auto">
+                    <div v-for="(box, index) in store.statisticList" :key="index" class="stati-box text-center ">
+                        <h2>{{box.number}}</h2>
+                        <p>{{box.txt}}</p> 
                     </div>
                 </div>
             </div>
@@ -93,16 +93,20 @@
         <!-- STATISTICS -->
 
         <!-- TEAM -->
-        <section class="container debug">
-            <div class="text-center">
-                <p>THE PERICUROS</p>
-                <h4>MEET THE TEAM</h4>
+        <section id="teams" class="container mt-5 mb-5">
+            <div class="text-center text-uppercase mb-4">
+                <p>the pericuros</p>
+                <h4 class="fs-1">meet the team</h4>
             </div>
-            <div class="container debug">
-                <div class="card">
-                    <img src="" alt="">
-                    <h5>FABRICIO GUERRA</h5>
-                    <span>MAIN DIRECTOR</span>
+            <div class="d-flex flex-wrap gap-3 ms-4">
+                <div v-for="(person, index) in store.teamList" :key="index" class="card-box d-flex flex-column ms-2 mt-2">
+                    <div class="my-card">
+                        <img :src="person.image" alt="">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h5 class="text-uppercase">{{ person.bigtxt }}</h5>
+                        <span>{{ person.smalltxt }}</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -351,7 +355,54 @@ export default {
         height: 250px;
         background-image: url(../assets/styles/img/Parallax-01.jpg) ;
         background-position: center;
+        .container{
+
+            padding-top: 30px;
+            .stati-box{
+            width: 200px;
+            height: 200px;
+            color: $white-bg;
+            padding-top: 50px;
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: .8rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            
+
+        }
+        }
+        
     }
 
 /* / STATISTICS */
+
+/* TEAMS */
+
+#teams {
+    .card-box {
+        width: 280px;
+
+        h5{
+            font-size: 1rem;
+        }
+
+        .my-card {
+            width: 100%;
+            height: 330px;
+            
+
+            img {
+                width: 100%;
+                height: 100%;
+
+
+            }
+        }
+    }
+}
+
 </style>
