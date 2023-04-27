@@ -43,6 +43,14 @@ export const store = reactive({
         }
     ],
 
+
+    slides: [
+
+        "/images/Main-Banner-1.jpg",
+        "/images/Main-Banner-2.jpg"
+
+    ],
+
     socialList: [
         {
             text: "/images/image (9).svg",

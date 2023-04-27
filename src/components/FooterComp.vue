@@ -38,7 +38,7 @@
         </div>
         <div class="container-fluid d-flex align-content-center end-page">
             <div class=" container end-page-border text-center">
-                <p class="text-capitalize"> &copy; All rights resevered. develobed by andrea c.</p>
+                <p class="text-capitalize"> &copy; 2023 All rights resevered. develobed by andrea c.</p>
             </div>
         </div>
 
@@ -91,19 +91,13 @@ footer {
             p {
                 margin: 0;
             }
-
         }
-
-
     }
-
 
     .foot-cont {
         background-color: $black-bg ;
         height: 450px;
-
     }
-
 
     ul {
         margin-bottom: 10px;
@@ -120,7 +114,7 @@ footer {
             border: none;
             font-weight: bold;
             text-transform: capitalize;
-            /*  margin-top: px; */
+
         }
 
         button {
@@ -132,18 +126,15 @@ footer {
             font-weight: bold;
             text-transform: uppercase;
             margin-top: 20px;
-
         }
 
         li {
-
             text-transform: capitalize;
             line-height: 3rem;
 
-            a{
+            a {
                 text-decoration: none;
                 color: $footer-gray;
-
             }
 
             h5 {
@@ -154,12 +145,8 @@ footer {
 
             img {
                 width: 5%;
-
             }
-
-
         }
-
     }
 }
 </style>

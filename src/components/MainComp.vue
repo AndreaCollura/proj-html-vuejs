@@ -1,15 +1,13 @@
 <template>
     <main>
-
         <!-- HERO -->
-        <section class="pb-5">
-            <div class="container-fluid hero d-flex justify-content-start ">
-                <div class="container content  text-uppercase">
-                    <div class="txt-box">
-                        <p class="m-0">cinemato studio</p>
-                        <h1>action and inspire people</h1>
-                        <button>read more</button>
-                    </div>
+        <section class="pb-5 ">
+            <div class="hero d-flex justify-content-start ">
+                <Carousel />
+                <div class="txt-box">
+                    <p class="m-0">cinemato studio</p>
+                    <h1>action and inspire people</h1>
+                    <button>read more</button>
                 </div>
             </div>
         </section>
@@ -215,11 +213,13 @@
 </template>
 
 <script>
-
+import Carousel from './Carousel.vue';
 import { store } from '../data/store'
 export default {
     name: 'MainComp',
     components: {
+        Carousel
+
 
     },
     data() {
@@ -244,43 +244,46 @@ export default {
 /* HERO */
 .hero {
     height: 700px;
-    background-image: url(../assets/styles/img/Main-Banner-1.jpg);
+    width: 100%;
+    position: relative;
 
-
-    .content {
-        padding-top: 220px;
+    .txt-box {
         color: $white-bg;
+        position: absolute;
+        width: 600px;
+        top: 220px;
+        left: 260px;
+        right: 0;
+        bottom: 0;
 
-        .txt-box {
-            width: 600px;
-
-
-            p {
-                font-size: 1.2rem;
-                font-weight: 700;
-            }
-
-            h1 {
-                font-size: 4.3rem;
-                font-weight: 700;
-            }
-
-            button {
-                width: 170px;
-                height: 50px;
-                font-size: .8rem;
-                background-color: $white-bg;
-                border: none;
-                font-weight: bold;
-                text-transform: uppercase;
-                margin-top: 20px;
-
-            }
+        p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
         }
 
+        h1 {
+            font-size: 4.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        button {
+            width: 170px;
+            height: 50px;
+            font-size: .8rem;
+            background-color: $white-bg;
+            border: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 20px;
+
+        }
     }
 
 }
+
+
 
 /* / HERO */
 
@@ -289,19 +292,23 @@ export default {
 
 #features {
 
-    h4{
+    h4 {
         font-weight: 700;
     }
-    p{
+
+    p {
         font-size: .8rem;
         font-weight: 700;
         color: $gray-bg;
     }
+
     .card-box {
         width: 400px;
+
         .my-card {
             width: 100%;
             height: 180px;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -309,13 +316,16 @@ export default {
             }
         }
     }
+
     .txt-box {
         margin: 0 auto;
         width: 300px;
+
         h5 {
             font-weight: 700;
             font-size: 1rem;
         }
+
         span {
             color: $gray-bg;
         }
@@ -340,7 +350,7 @@ export default {
         p {
             font-weight: 700;
             font-size: .8rem;
-            
+
         }
 
         h2 {
@@ -375,14 +385,16 @@ export default {
 
 #hits {
 
-    h4{
+    h4 {
         font-weight: 700;
     }
-    p{
+
+    p {
         font-size: .8rem;
         font-weight: 700;
         color: $gray-bg;
     }
+
     .card-box {
         width: 400px;
 
@@ -407,15 +419,17 @@ export default {
     .txt-box {
         margin: 0 auto;
         width: 300px;
+
         h5 {
             font-weight: 700;
             font-size: 1rem;
         }
+
         span {
             color: $gray-bg;
         }
     }
-    
+
 }
 
 /* HITS */
@@ -460,14 +474,16 @@ export default {
 
 #teams {
 
-    h4{
+    h4 {
         font-weight: 700;
     }
-    p{
+
+    p {
         font-size: .8rem;
         font-weight: 700;
         color: $gray-bg;
     }
+
     .card-box {
         width: 280px;
 
@@ -492,10 +508,12 @@ export default {
     .txt-box {
         margin: 0 auto;
         width: 300px;
+
         h5 {
             font-weight: 700;
             font-size: 1rem;
         }
+
         span {
             color: $gray-bg;
         }
@@ -560,15 +578,17 @@ export default {
 /* NEWS */
 
 #news {
-    
-    h4{
+
+    h4 {
         font-weight: 700;
     }
-    p{
+
+    p {
         font-size: .8rem;
         font-weight: 700;
         color: $gray-bg;
     }
+
     .card-box {
         width: 400px;
 
