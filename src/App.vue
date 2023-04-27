@@ -15,19 +15,7 @@
 
   <!-- FOOTER -->
 
-  <footer class="container-fluid debug">
-    <!-- <div class="container d-flex debug">
-      <ul class="px-0" v-for="(list, index) in footerLinks" :key="index">
-        <li class="text-white text-uppercase">{{ list.title }}</li>
-        <li v-for="(item, i) in list.links" :key="i">
-          <a :href="item.url">{{ item.text }}</a>
-        </li>
-      </ul>
-    </div> -->
-    <div class="container text-center">
-      <p>All rights resever.................</p>
-    </div>
-  </footer>
+  <FooterComp/>
 
   <!-- / FOOTER -->
 </template>
@@ -36,11 +24,13 @@
 import { store } from './data/store'
 import HeaderComp from './components/HeaderComp.vue';
 import MainComp from './components/MainComp.vue';
+import FooterComp from './components/FooterComp.vue';
 export default {
   name: 'App',
   components: {
     HeaderComp,
-    MainComp
+    MainComp,
+    FooterComp
 
   },
   data() {
@@ -62,12 +52,5 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
 
 
-// .icons-bg{
-//   background-image: url(./assets/styles/img/Parallax-03.jpg);
-//   height: 200px;
-
-//   margin: 0 5px;
-//   background-position: center;
-
-// }
+ 
 </style>

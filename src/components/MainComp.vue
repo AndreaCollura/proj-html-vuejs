@@ -83,8 +83,8 @@
             <div class="container-fluid">
                 <div class="container d-flex justify-content-between my-auto">
                     <div v-for="(box, index) in store.statisticList" :key="index" class="stati-box text-center ">
-                        <h2>{{box.number}}</h2>
-                        <p>{{box.txt}}</p> 
+                        <h2>{{ box.number }}</h2>
+                        <p>{{ box.txt }}</p>
                     </div>
                 </div>
             </div>
@@ -115,10 +115,11 @@
         <section id="quote">
             <div class="container-fluid d-flex align-items-center ">
                 <div class="container d-flex flex-column align-items-center w-50 ">
-                    <div >
+                    <div>
                         <img class="quote-icon" src="../assets/styles/img/image (20).svg" alt="">
                     </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi, aspernatur, ex officia
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi,
+                        aspernatur, ex officia
                         praesentium
                         est illo consequuntur quis optio placeat aliquid veniam! Dolorem, velit recusandae,
                         ex officia
@@ -130,7 +131,7 @@
                             <h4>john doe</h4>
                             <span>Designer</span>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -149,7 +150,7 @@
                         <img :src="card.image" alt="">
                     </div>
                     <div class="mt-3">
-                        <span >{{ card.date }}</span>
+                        <span>{{ card.date }}</span>
                         <h5 class="text-uppercase mt-2">{{ card.bigtxt }}</h5>
                         <p>{{ card.smalltxt }}</p>
                     </div>
@@ -163,7 +164,7 @@
             <div class="container-fluid">
                 <div class="container d-flex justify-content-between my-auto">
                     <div v-for="(box, index) in store.iconList" :key="index" class="icon-box text-center ">
-                        <img :src="box.image" alt=""> 
+                        <img :src="box.image" alt="">
                     </div>
                 </div>
             </div>
@@ -174,10 +175,11 @@
 
         <section id="cta" class="container  d-flex align-items-center">
             <div class="w-50 p-4 ">
-                <span >collaborate</span>
-                <h2 class="mt-4" >want to work with us?</h2>
+                <span>collaborate</span>
+                <h2 class="mt-4">want to work with us?</h2>
                 <h2>leave us a message!</h2>
-                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus assumenda at tempora atque
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus assumenda at tempora
+                    atque
                     molestiae.
                     Unde molestias fugit officia doloremque ullam assumenda exercitationem praesentium at, laboriosam,
                     molestiae vel
@@ -203,7 +205,6 @@
                     <div class="col-12">
                         <button type="submit" class="big-btn-form">submit now</button>
                     </div>
-                    
                 </form>
             </div>
         </section>
@@ -236,7 +237,6 @@ export default {
 
 
 <style lang="scss" scoped>
-
 @use '../assets/styles/partials/variables' as *;
 
 
@@ -245,7 +245,7 @@ export default {
 .hero {
     height: 700px;
     background-image: url(../assets/styles/img/Main-Banner-1.jpg);
-    
+
 
     .content {
         padding-top: 220px;
@@ -258,7 +258,7 @@ export default {
                 font-size: 1.2rem;
             }
 
-            h1{
+            h1 {
                 font-size: 4.3rem;
             }
 
@@ -284,25 +284,25 @@ export default {
 
 /* FEATURES */
 
-#features{
+#features {
     .card-box {
-    width: 400px;
+        width: 400px;
 
-    .my-card {
-        width: 100%;
-        height: 180px;
-        
-
-        img {
+        .my-card {
             width: 100%;
-            height: 100%;
-            scale: .4;
+            height: 180px;
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                scale: .4;
 
 
 
+            }
         }
     }
-}
 }
 
 
@@ -357,14 +357,14 @@ export default {
     .card-box {
         width: 400px;
 
-        h5{
+        h5 {
             font-size: 1rem;
         }
 
         .my-card {
             width: 100%;
             height: 300px;
-            
+
 
             img {
                 width: 100%;
@@ -383,32 +383,36 @@ export default {
 
 /*  STATISTICS */
 
-    #statistics{
-        height: 250px;
-        background-image: url(../assets/styles/img/Parallax-01.jpg) ;
-        background-position: center;
-        .container{
+#statistics {
+    height: 250px;
+    background-image: url(../assets/styles/img/Parallax-01.jpg);
+    background-position: center;
 
-            padding-top: 30px;
-            .stati-box{
+    .container {
+
+        padding-top: 30px;
+
+        .stati-box {
             width: 200px;
             height: 200px;
             color: $white-bg;
             padding-top: 50px;
-            h2{
+
+            h2 {
                 font-size: 3rem;
             }
-            p{
+
+            p {
                 font-size: .8rem;
                 font-weight: bold;
                 text-transform: uppercase;
             }
-            
+
 
         }
-        }
-        
     }
+
+}
 
 /* / STATISTICS */
 
@@ -418,14 +422,14 @@ export default {
     .card-box {
         width: 280px;
 
-        h5{
+        h5 {
             font-size: 1rem;
         }
 
         .my-card {
             width: 100%;
             height: 330px;
-            
+
 
             img {
                 width: 100%;
@@ -441,28 +445,29 @@ export default {
 
 /* QUOTE */
 
-#quote{
-    .container-fluid{
+#quote {
+    .container-fluid {
         background-image: url(../assets/styles/img/Parallax-02.jpg);
         color: $white-bg;
         height: 500px;
-        p{
+
+        p {
             font-weight: bold;
             font-size: .9rem;
         }
-        
-        .quote-icon{
+
+        .quote-icon {
             margin-bottom: 30px;
             width: 50px;
             filter: invert(1)
-        
-        
         }
-        .staff-box{
-            
+
+        .staff-box {
+
             width: 200px;
             height: 70px;
-            img{
+
+            img {
                 width: 55px;
                 height: 55px;
                 object-fit: contain;
@@ -470,21 +475,23 @@ export default {
                 border-radius: 50%;
                 margin-right: 20px;
             }
-            h4{
+
+            h4 {
                 text-transform: uppercase;
                 font-size: 1rem;
                 margin: 0;
                 padding: 0;
-                
+
             }
-            span{
+
+            span {
                 font-size: .8rem;
                 line-height: .1rem;
-                
+
             }
         }
     }
-    
+
 }
 
 /*  / QUOTE */
@@ -494,11 +501,12 @@ export default {
 #news {
     .card-box {
         width: 400px;
-        span{
+
+        span {
             color: $gray-bg;
         }
 
-        h5{
+        h5 {
             font-size: .9rem;
             font-weight: 700;
         }
@@ -506,7 +514,7 @@ export default {
         .my-card {
             width: 100%;
             height: 300px;
-            
+
 
             img {
                 width: 100%;
@@ -522,90 +530,96 @@ export default {
 
 /* ICONS */
 
-#icons{
-        height: 250px;
-        background-image: url(../assets/styles/img/Parallax-03.jpg) ;
-        background-position: center;
-        .container{
+#icons {
+    height: 250px;
+    background-image: url(../assets/styles/img/Parallax-03.jpg);
+    background-position: center;
 
-            padding-top: 30px;
-            .icon-box{
+    .container {
+
+        padding-top: 30px;
+
+        .icon-box {
             width: 200px;
             height: 200px;
             color: $white-bg;
             padding-top: 50px;
-            img{
+
+            img {
                 width: 150px;
             }
-            h2{
+
+            h2 {
                 font-size: 3rem;
             }
-            p{
+
+            p {
                 font-size: .8rem;
                 font-weight: bold;
                 text-transform: uppercase;
             }
-            
+
 
         }
-        }
-        
     }
 
-    /* / ICONS */
+}
+
+/* / ICONS */
 
 
-    /* CTA */
+/* CTA */
 
-    #cta{
-        
-            height: 500px;
+#cta {
 
-            span{
-                text-transform: uppercase;
-                font-size: .8rem;
-                font-weight: 700;
-                
-            }
-            h2{
-                text-transform: uppercase;
-                
-                font-weight: 700;
-            }
-            p{
-                color: $gray-bg;
-            }
-        
-        .form-control{
-            background-color: $light-gray;
-            border: none;
-            border-radius: none;
-            
-        }
+    height: 500px;
 
-        .big-txt-form{
-            width: 100%;
-            background-color: $light-gray;
-            border: none;
-            border-radius: none;
-            height: 150px;
-            padding: 5px 10px;
+    span {
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: 700;
 
-        }
+    }
 
-        .big-btn-form{
-            height: 40px;
-            width: 100%;
-            background-color: $black-bg;
-            color: $white-bg;
-            text-transform: uppercase;
-            font-size: .8rem;
-            font-weight: 700;
+    h2 {
+        text-transform: uppercase;
 
-        }
+        font-weight: 700;
+    }
+
+    p {
+        color: $gray-bg;
+    }
+
+    .form-control {
+        background-color: $light-gray;
+        border: none;
+        border-radius: none;
+
+    }
+
+    .big-txt-form {
+        width: 100%;
+        background-color: $light-gray;
+        border: none;
+        border-radius: none;
+        height: 150px;
+        padding: 5px 10px;
+
+    }
+
+    .big-btn-form {
+        height: 40px;
+        width: 100%;
+        background-color: $black-bg;
+        color: $white-bg;
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: 700;
+
+    }
 
 
-    } 
-    /*/ CTA */
+}
 
-</style>
+/*/ CTA */</style>

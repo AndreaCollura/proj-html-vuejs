@@ -215,4 +215,61 @@ export const store = reactive({
             image: "/images/02.png",
         },
     ],
+
+
+
+
+    footerList: [
+        {
+            title: 'information',
+            links: [
+                {
+                    text: "product support",
+                    url: "#",
+                },
+                {
+                    text: "checkout",
+                    url: "#",
+                },
+                {
+                    text: "report abuse",
+                    url: "#",
+                },
+                {
+                    text: "redeem voucher",
+                    url: "#",
+                },
+                {
+                    text: "order status",
+                    url: "#",
+                }
+    
+            ]
+        },
+        {
+            title: 'useful links',
+            links: [
+                {
+                    text: "policies & rules",
+                    url: "#",
+                },
+                {
+                    text: "privacy policy",
+                    url: "#",
+                },
+                {
+                    text: "licenze policy",
+                    url: "#",
+                },
+                {
+                    text: "my account",
+                    url: "#",
+                },
+                {
+                    text: "locality",
+                    url: "#",
+                }
+            ]
+        },
+    ]
 })
