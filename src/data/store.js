@@ -14,7 +14,7 @@ export const store = reactive({
         {
             text: "BLOG",
             url: "#",
-            arrow: true,
+            arrow: false,
         },
         {
             text: "PAGES ",

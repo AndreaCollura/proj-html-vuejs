@@ -8,7 +8,7 @@
                 <div>
                     <ul class="d-flex my-0 gap-4">
                         <li v-for="(link, index) in store.navList" :key="index">
-                            <a :href="link.url">{{ link.text }}</a>
+                            <a :href="link.url">{{ link.text }} <img v-if="(link.arrow)" src="../assets/styles/img/image (7).svg" alt=""> </a>
                         </li>
                     </ul>
                 </div>
@@ -79,9 +79,15 @@ i {
     width: 250px;
     margin-right: 10px;
     margin-left: 10px;
+
+    i{
+        padding: 5px 15px;
+        
+    }
+
     img {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         margin: 0 10px;
         object-fit: contain;
     }
@@ -102,6 +108,9 @@ ul {
             color: $gray-bg;
             text-decoration: none;
             font-weight: bold;
+            img{
+                width: 10px;
+            }
 
         }
     }
