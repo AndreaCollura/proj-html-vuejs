@@ -2,7 +2,7 @@
     <div class="mycarousel">
         
         <div class="mycarousel-inner">
-            <CarouselItem v-for="(slide, index) in store.slides" :slide="slide" :key="`item-${index}`" :current-slide="currentSlide" :index="index"/>
+            <CarouselItem v-for="(slide, index) in store.slides" :slide="slide" :key="`item-${index}`" :current-slide="currentSlide" :index="index" :direction="direction"/>
             <CarouselControls @prev="prev" @next="next"/>
         </div>
     </div>
@@ -22,7 +22,8 @@ export default {
     data(){
             return{
                 store,
-                currentSlide: 1
+                currentSlide: 1,
+                direction: "right"
             }
         },
         methods:{
@@ -32,12 +33,14 @@ export default {
             prev(){
                 const index = this.currentSlide > 0 ? this.currentSlide - 1 : store.slides.length - 1;
                 this.setCurrentSlide(index);
+                this.direction = "left";
 
             },
 
             next(){
                 const index = this.currentSlide < store.slides.length - 1 ? this.currentSlide + 1 : 0;
                 this.setCurrentSlide(index);
+                this.direction = "right";
 
             }
 
@@ -57,7 +60,7 @@ export default {
 
     .mycarousel-inner{
             position: relative;
-            width: 1680px;
+            width: 100%;
             height: 700px;
             overflow: hidden;
 

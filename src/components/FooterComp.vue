@@ -135,7 +135,12 @@ footer {
             a {
                 text-decoration: none;
                 color: $footer-gray;
+
+                &:hover{
+                    color: $white-bg;
+                }
             }
+
 
             h5 {
                 font-size: 1rem;

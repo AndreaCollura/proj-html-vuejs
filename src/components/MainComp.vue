@@ -1,8 +1,8 @@
 <template>
     <main>
         <!-- HERO -->
-        <section class="pb-5 ">
-            <div class="hero d-flex justify-content-start ">
+        <section class="pb-5 w-100 ">
+            <div class="hero">
                 <Carousel />
                 <div class="txt-box">
                     <p class="m-0">cinemato studio</p>
@@ -246,6 +246,7 @@ export default {
     height: 700px;
     width: 100%;
     position: relative;
+    
 
     .txt-box {
         color: $white-bg;
