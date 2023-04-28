@@ -1,28 +1,22 @@
 <template>
-  <!-- HEADER -->
 
   <HeaderComp/>
 
-  <!--FINE HEADER -->
-
-  <!-- MAIN -->
 
   <MainComp/>
 
-  <!-- FINE MAIN -->
-
-  <!-- FOOTER -->
 
   <FooterComp/>
 
-  <!-- / FOOTER -->
 </template>
 
 <script>
+
 import { store } from './data/store'
 import HeaderComp from './components/HeaderComp.vue';
 import MainComp from './components/MainComp.vue';
 import FooterComp from './components/FooterComp.vue';
+
 export default {
   name: 'App',
   components: {
