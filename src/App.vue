@@ -7,8 +7,7 @@
 
 
   <FooterComp/>
-
-  <prova/>  
+  
 
 </template>
 
@@ -26,7 +25,7 @@ export default {
     HeaderComp,
     MainComp,
     FooterComp,
-    prova
+    
 
   },
   data() {
