@@ -5,6 +5,8 @@ import { reactive } from "vue";
 export const store = reactive({
 
     
+
+    
     navList: [
         {
             text: "HOME",
@@ -20,6 +22,20 @@ export const store = reactive({
             text: "PAGES ",
             url: "#",
             arrow: true,
+            children: [
+                {
+                    text: "services",
+                    url: "#",
+                },
+                {
+                    text: "our work flow",
+                    url: "#",
+                },
+                {
+                    text: "video thumbnail type",
+                    url: "#",
+                },
+            ]
         },
         {
             text: "ABOUT",
@@ -40,6 +56,16 @@ export const store = reactive({
             text: "SHOP",
             url: "#",
             arrow: true,
+            children: [
+                {
+                    text: "shop pages",
+                    url: "#",
+                },
+                {
+                    text: "product type",
+                    url: "#",
+                }
+            ]
         }
     ],
 
