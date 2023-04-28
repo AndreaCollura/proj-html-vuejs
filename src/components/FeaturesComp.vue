@@ -54,6 +54,7 @@ export default {
         .my-card {
             width: 100%;
             height: 180px;
+            
 
             img {
                 width: 100%;

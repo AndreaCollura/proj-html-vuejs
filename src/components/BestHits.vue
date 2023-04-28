@@ -56,6 +56,17 @@ export default {
         .my-card {
             width: 100%;
             height: 300px;
+            overflow: hidden;
+            
+
+            &:hover{
+                img{
+                    scale: 1.1;
+                    transition: 1s;
+                    
+
+                }
+            }
 
 
             img {
