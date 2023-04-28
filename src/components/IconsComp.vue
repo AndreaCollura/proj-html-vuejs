@@ -29,7 +29,8 @@ export default {
 #icons {
     height: 250px;
     background-image: url(../assets/styles/img/Parallax-03.jpg);
-    background-position: center;
+    
+    background-attachment: fixed;
 
     .container {
 

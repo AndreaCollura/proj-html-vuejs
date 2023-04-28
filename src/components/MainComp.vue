@@ -1,25 +1,25 @@
 <template>
     <main>
 
-        <HeroComp/>
+        <HeroComp />
 
-        <FeaturesComp/>
+        <FeaturesComp />
 
-        <AboutUsComp/>
+        <AboutUsComp />
 
-        <BestHits/>   
+        <BestHits />
 
-        <Statistics/>
+        <Statistics />
 
-        <TeamComp/>
+        <TeamComp />
 
-        <QuoteComp/>
+        <QuoteComp /> 
 
-        <LatestNews/>
+        <LatestNews />
 
-        <IconsComp/>
+        <IconsComp />
 
-        <CtaComp/>
+        <CtaComp />
 
     </main>
 </template>
@@ -65,6 +65,4 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-
-
 </style>

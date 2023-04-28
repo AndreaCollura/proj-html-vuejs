@@ -1,42 +1,54 @@
 <template>
     <section id="quote">
-            <div class="container-fluid d-flex align-items-center ">
-                <div class="container d-flex flex-column align-items-center w-50 ">
-                    <div>
-                        <img class="quote-icon" src="../assets/styles/img/image (20).svg" alt="">
-                    </div>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi,
-                        aspernatur, ex officia
-                        praesentium
-                        est illo consequuntur quis optio placeat aliquid veniam! Dolorem, velit recusandae,
-                        ex officia
-                        praesentium
-                        est illo consequuntur quis optio placeat aliquid veniam! Dolorem, velit recusandae</p>
-                    <div class="staff-box d-flex align-items-center">
-                        <img src="../assets/styles/img/01.jpg" alt="">
+        <div class="container-fluid d-flex align-items-center ">
+            <div class="container d-flex flex-column align-items-center w-50  ">
+                <swiper-container pagination-el=".swiper-pagination" class="w-100">
+                    <swiper-slide v-for="(pic, index) in store.picsList" :key="index" class="d-flex flex-column align-items-center">
                         <div>
-                            <h4>john doe</h4>
-                            <span>Designer</span>
+                            <img class="quote-icon" src="../assets/styles/img/image (20).svg" alt="">
                         </div>
-
-                    </div>
-                </div>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi,
+                            aspernatur, ex officia
+                            praesentium
+                            est illo consequuntur quis optio placeat aliquid veniam! Dolorem, velit recusandae,
+                            ex officia
+                            praesentium
+                            est illo consequuntur quis optio placeat aliquid veniam! Dolorem, velit recusandae</p>
+                        <div class="staff-box d-flex align-items-center">
+                            <img :src="pic.image" alt="">
+                            <div>
+                                <h4>john doe</h4>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
             </div>
-        </section>
+        </div>
+    </section>
 </template>
 
+
 <script>
+
+import { register } from 'swiper/element/bundle';
 import { store } from '../data/store'
 export default {
     name: 'QuoteComp',
+
     data() {
         return {
             store
         }
+    },
+    mounted() {
+        register();
     }
 
 }
 </script>
+
+
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
@@ -44,6 +56,7 @@ export default {
 #quote {
     .container-fluid {
         background-image: url(../assets/styles/img/Parallax-02.jpg);
+        background-attachment: fixed;
         color: $white-bg;
         height: 500px;
 
@@ -89,7 +102,4 @@ export default {
     }
 
 }
-
-
-
 </style>

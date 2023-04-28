@@ -1,32 +1,32 @@
 <template>
     <section class="pb-5 w-100 ">
-            <div class="hero">
-                <Carousel />
-                <div class="txt-box">
-                    <p class="m-0">cinemato studio</p>
-                    <h1>action and inspire people</h1>
-                    <button>read more</button>
-                </div>
+        <div class="hero">
+            <Carousel />
+            <div class="txt-box">
+                <p class="m-0">cinemato studio</p>
+                <h1>action and inspire people</h1>
+                <button>read more</button>
             </div>
-        </section>
+        </div>
+    </section>
 </template>
 
 <script>
 
 import { store } from '../data/store'
 import Carousel from './Carousel.vue';
-    export default {
-        name: 'HeroComp',
-        components: {
-            Carousel,
-        },
-        data() {
-            return{
-                store
-            }
+export default {
+    name: 'HeroComp',
+    components: {
+        Carousel,
+    },
+    data() {
+        return {
+            store
         }
-        
     }
+
+}
 </script>
 
 <style lang="scss" scoped>
@@ -36,7 +36,7 @@ import Carousel from './Carousel.vue';
     height: 700px;
     width: 100%;
     position: relative;
-    
+
 
     .txt-box {
         color: $white-bg;
@@ -73,6 +73,4 @@ import Carousel from './Carousel.vue';
     }
 
 }
-
-
 </style>

@@ -30,7 +30,7 @@ export default {
 #statistics {
     height: 250px;
     background-image: url(../assets/styles/img/Parallax-01.jpg);
-    background-position: center;
+    background-attachment: fixed;
 
     .container {
 

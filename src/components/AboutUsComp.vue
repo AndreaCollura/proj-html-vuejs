@@ -1,36 +1,36 @@
 <template>
     <section class="pt-5">
-            <div class="container-fluid about-us d-flex justify-content-end">
-                <div class="content-box w-50">
-                    <p>ABOUT US</p>
-                    <h2>HIGH QUALITY CINEMATICS</h2>
-                    <span class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci cumque, beatae
-                        voluptates vero
-                        esse in
-                        aliquam sed culpa assumenda temporibus quasi inventore nulla labore natus! Similique, quos cum sed
-                        ipsa esse
-                        nemo eveniet excepturi repellendus, laborum quo quia, saepe itaque. Culpa placeat est, repudiandae
-                        eos
-                        veritatis ipsum nihil quos dignissimos?</span>
-                    <div>
-                        <button class="button">read more</button>
-                    </div>
+        <div class="container-fluid about-us d-flex justify-content-end">
+            <div class="content-box w-50">
+                <p>ABOUT US</p>
+                <h2>HIGH QUALITY CINEMATICS</h2>
+                <span class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci cumque, beatae
+                    voluptates vero
+                    esse in
+                    aliquam sed culpa assumenda temporibus quasi inventore nulla labore natus! Similique, quos cum sed
+                    ipsa esse
+                    nemo eveniet excepturi repellendus, laborum quo quia, saepe itaque. Culpa placeat est, repudiandae
+                    eos
+                    veritatis ipsum nihil quos dignissimos?</span>
+                <div>
+                    <button class="button">read more</button>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 </template>
 
 <script>
 
-    export default {
-        name: 'AboutUsComp',
-        data(){
-            return{
-                
-            }
+export default {
+    name: 'AboutUsComp',
+    data() {
+        return {
+
         }
-        
     }
+
+}
 </script>
 
 <style lang="scss" scoped>
@@ -76,5 +76,4 @@
     }
 
 }
-
 </style>

@@ -250,6 +250,19 @@ export const store = reactive({
         },
     ],
 
+    picsList: [
+        {
+            image: "/images/01.jpg",
+        },
+        {
+            image: "/images/02.jpg",
+        },
+        {
+            image: "/images/03.jpg",
+        },
+        
+    ],
+
 
 
 
