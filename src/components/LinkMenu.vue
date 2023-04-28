@@ -1,5 +1,5 @@
 <template>
-    <li class="prova">
+    <li class="hover-trigger">
         <a :href="link.url">{{ link.text }}<img v-if="(link.arrow)" src="../assets/styles/img/image (7).svg" alt=""></a>
         <span >
             <ul class="dropdown" v-if="link.arrow">
@@ -69,7 +69,7 @@ export default {
 
 
 
-li.prova {
+li.hover-trigger {
 
     &:hover .dropdown{
         display: block;
