@@ -54,8 +54,16 @@ export default {
         .my-card {
             width: 100%;
             height: 180px;
-            
 
+            &:hover{
+                img{
+                    transform: translateY(-20%);
+                    transition: 1s;
+                    
+
+                }
+            }
+            
             img {
                 width: 100%;
                 height: 100%;
