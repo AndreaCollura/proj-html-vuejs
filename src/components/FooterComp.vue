@@ -38,7 +38,7 @@
         </div>
         <div class="container-fluid d-flex align-content-center end-page">
             <div class=" container end-page-border text-center">
-                <p class="text-capitalize"> &copy; 2023 All rights resevered. develobed by andrea c.</p>
+                <p class="text-capitalize"> &copy; 2023 All rights resevered. developed by andrea c.</p>
             </div>
         </div>
 
@@ -77,12 +77,12 @@ footer {
 
     .end-page {
         background-color: $black-bg ;
-        color: $footer-gray;
+        color: $footer-grey;
 
 
 
         .end-page-border {
-            border-top: 1px solid $gray-bg;
+            border-top: 1px solid $grey-bg;
             height: 70px;
             display: flex;
             justify-content: center;
@@ -102,7 +102,7 @@ footer {
     ul {
         margin-bottom: 10px;
         list-style: none;
-        color: $footer-gray;
+        color: $footer-grey;
         width: 300px;
 
         input {
@@ -110,7 +110,7 @@ footer {
             height: 40px;
             font-size: .9rem;
             padding-left: 10px;
-            background-color: $dark-gray;
+            background-color: $dark-grey;
             border: none;
             font-weight: bold;
             text-transform: capitalize;
@@ -134,9 +134,9 @@ footer {
 
             a {
                 text-decoration: none;
-                color: $footer-gray;
+                color: $footer-grey;
 
-                &:hover{
+                &:hover {
                     color: $white-bg;
                 }
             }
@@ -145,7 +145,7 @@ footer {
             h5 {
                 font-size: 1rem;
                 font-weight: 700;
-                color: $light-gray;
+                color: $light-grey;
             }
 
             img {
