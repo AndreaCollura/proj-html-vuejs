@@ -43,7 +43,7 @@ export default {
     p {
         font-size: .8rem;
         font-weight: 700;
-        color: $gray-bg;
+        color: $grey-bg;
     }
 
     .card-box {
@@ -57,13 +57,13 @@ export default {
             width: 100%;
             height: 300px;
             overflow: hidden;
-            
 
-            &:hover{
-                img{
+
+            &:hover {
+                img {
                     scale: 1.1;
                     transition: 1s;
-                    
+
 
                 }
             }
@@ -88,7 +88,7 @@ export default {
         }
 
         span {
-            color: $gray-bg;
+            color: $grey-bg;
         }
     }
 
