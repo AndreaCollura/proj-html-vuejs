@@ -71,11 +71,11 @@ export default {
     }
 
     p {
-        color: $gray-bg;
+        color: $grey-bg;
     }
 
     .form-control {
-        background-color: $light-gray;
+        background-color: $light-grey;
         border: none;
         border-radius: none;
 
@@ -83,7 +83,7 @@ export default {
 
     .big-txt-form {
         width: 100%;
-        background-color: $light-gray;
+        background-color: $light-grey;
         border: none;
         border-radius: none;
         height: 150px;

@@ -5,7 +5,7 @@
                 <img src="../assets/styles/img/logo.svg" alt="">
             </div>
 
-            <NavBarComp/>
+            <NavBarComp />
 
             <div class="social-icons d-flex align-items-center">
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -54,9 +54,9 @@ export default {
 
         i {
             padding: 5px 15px;
-            border-right: 1px solid $gray-bg ;
+            border-right: 1px solid $grey-bg ;
             padding-right: 20px;
-            color: $gray-bg;
+            color: $grey-bg;
             margin-right: 10px;
             font-size: 1.2rem;
 
@@ -70,7 +70,7 @@ export default {
         }
     }
 
-    
+
 
 
     .logo {

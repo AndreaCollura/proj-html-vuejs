@@ -45,7 +45,7 @@ export default {
     p {
         font-size: .8rem;
         font-weight: 700;
-        color: $gray-bg;
+        color: $grey-bg;
     }
 
     .card-box {
@@ -55,15 +55,15 @@ export default {
             width: 100%;
             height: 180px;
 
-            &:hover{
-                img{
+            &:hover {
+                img {
                     transform: translateY(-20%);
                     transition: 1s;
-                    
+
 
                 }
             }
-            
+
             img {
                 width: 100%;
                 height: 100%;
@@ -82,7 +82,7 @@ export default {
         }
 
         span {
-            color: $gray-bg;
+            color: $grey-bg;
         }
     }
 }
